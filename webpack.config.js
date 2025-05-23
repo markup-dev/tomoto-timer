@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
 	entry: './src/js/main.js',
@@ -14,6 +15,9 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
 			filename: 'index.html'
+		}),
+		new MiniCssExtractPlugin({
+			filename: 'css/[name].css'
 		})
 	],
 	devServer: {
@@ -30,7 +34,7 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				use: [
-					'style-loader',
+					process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
 					'css-loader',
 					{
 						loader: 'postcss-loader',
