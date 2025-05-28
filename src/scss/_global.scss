@@ -1,3 +1,5 @@
+@use "var";
+
 * {
   box-sizing: border-box;
 }
@@ -9,8 +11,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 17px;
-  background: $button-second;
-  color: $light-font;
+  background: var.$button-second;
+  color: var.$light-font;
   position: relative;
 }
 
@@ -61,38 +63,38 @@ fieldset {
 }
 
 .button-primary {
-  background-color: $button-main;
-  color: $light-font;
+  background-color: var.$button-main;
+  color: var.$light-font;
   transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: darker($button-main, 1);
+    background-color: darker(var.$button-main, 1);
   }
 }
 
 .button-secondary {
-  background-color: $button-second;
-  color: $window-panel;
+  background-color: var.$button-second;
+  color: var.$window-panel;
   width: 140px;
   border: 2px solid #000000;
   transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: darker($button-second, 1);
+    background-color: darker(var.$button-second, 1);
   }
 }
 
 .input-primary {
   width: 420px;
   height: 55px;
-  background-color: $window-back-ground;
+  background-color: var.$window-back-ground;
   padding-left: 15px;
   border: 0;
   transition: background-color 0.3s ease-in-out;
   border-radius: 16px;
 
   &:hover {
-    background-color: darker($window-back-ground, 1);
+    background-color: darker(var.$window-back-ground, 1);
   }
 }
 

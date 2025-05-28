@@ -10,7 +10,7 @@
   <!-- <link rel="preload" href="fonts/Montserrat-Regular.ttf" as="font"
     type="font/ttf" crossorigin> -->
   <link rel="stylesheet" href="css/index.css">
-  <script defer src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
   <title>Tomato timer</title>
 </head>
 
@@ -18,8 +18,7 @@
   <header>
     <section class="header">
       <div class="container header__container">
-        <img src="img/svg/noto_tomato.svg" class="header__logo"
-          alt="Tomato image">
+        <div class="header__logo"></div>
         <h1 class="header__title">Tomato timer</h1>
       </div>
     </section>
@@ -29,7 +28,7 @@
       <div class="container main__container">
         <div class="pomodoro-form window">
           <div class="window__panel">
-            <p class="window__panel-title">Сверстать сайт</p>
+            <p class="window__panel-title"></p>
             <p class="window__panel-task-text">Томат 2</p>
           </div>
           <div class="window__body">
@@ -54,13 +53,12 @@
               Задачи:
             </p>
             <ul class="tasks__list">
-              <li class="tasks__item important">
+              <!-- <li class="tasks__item important">
                 <span class="count-number">1</span>
                 <button class="tasks__text tasks__text_active">
                   Сверстать сайт
                 </button>
                 <button class="tasks__button"></button>
-                <!-- popup menu -->
                 <div class="popup popup_active">
                   <button
                     class="popup__button popup__edit-button">Редактировать</button>
@@ -74,8 +72,6 @@
                   Оплатить налоги
                 </button>
                 <button class="tasks__button"></button>
-                <!-- popup menu -->
-
               </li>
               <li class="tasks__item default">
                 <span class="count-number">3</span>
@@ -83,7 +79,7 @@
                   Проверить валидность
                 </button>
                 <button class="tasks__button"></button>
-              </li>
+              </li> -->
             </ul>
             <p class="tasks__deadline">1&nbsp;час 30&nbsp;мин</p>
           </div>

@@ -1,6 +1,8 @@
+@use "var";
+
 .tasks {
   &__title {
-    color: $dark-font;
+    color: var.$dark-font;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -22,8 +24,8 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 17px;
-    color: $dark-font;
-    border-bottom: 1px solid $window-back-ground;
+    color: var.$dark-font;
+    border-bottom: 1px solid var.$window-back-ground;
     padding: 0 15px 0 35px;
   }
 
@@ -51,7 +53,7 @@
   }
 
   &__item:first-child {
-    border-top: 1px solid $window-back-ground;
+    border-top: 1px solid var.$window-back-ground;
   }
 
   &__text {
@@ -86,6 +88,6 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 17px;
-    color: $deadline-timer;
+    color: var.$deadline-timer;
   }
 }

@@ -388,7 +388,7 @@ fieldset {
   transition: background-color 0.3s ease-in-out;
 }
 .button-primary:hover {
-  background-color: #ef1a13;
+  background-color: darker(#ff2a23, 1);
 }
 
 .button-secondary {
@@ -400,7 +400,7 @@ fieldset {
   transition: background-color 0.3s ease-in-out;
 }
 .button-secondary:hover {
-  background-color: #e4e4e4;
+  background-color: darker(#f4f4f4, 1);
 }
 
 .input-primary {
@@ -414,7 +414,7 @@ fieldset {
   border-radius: 16px;
 }
 .input-primary:hover {
-  background-color: #d5d5d5;
+  background-color: darker(#e5e5e5, 1);
 }
 
 .button-importance {
@@ -430,21 +430,21 @@ fieldset {
   background-color: #a9bb30;
 }
 .button-importance.default:hover {
-  background-color: #99ab20;
+  background-color: darker(#a9bb30, 1);
 }
 
 .button-importance.so-so {
   background-color: #f3ec34;
 }
 .button-importance.so-so:hover {
-  background-color: #e3dc24;
+  background-color: darker(#f3ec34, 1);
 }
 
 .button-importance.important {
   background-color: #dc0d27;
 }
 .button-importance.important:hover {
-  background-color: #cc0017;
+  background-color: darker(#dc0d27, 1);
 }
 
 .count-number {
@@ -479,6 +479,12 @@ fieldset {
 }
 .header__logo {
   margin-right: 50px;
+  background-image: url(../img/svg/noto_tomato.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
 }
 .header__title {
   font-size: 24px;
@@ -780,7 +786,7 @@ fieldset {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .tasks__text_active:hover {
-  background-color: rgba(204, 0, 23, 0.3);
+  background-color: darker(rgba(220, 13, 39, 0.3), 1);
 }
 .tasks__button {
   height: 6px;

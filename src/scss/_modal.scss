@@ -1,3 +1,5 @@
+@use "var";
+
 .modal-overlay {
   display: none;
 	position: absolute;
@@ -20,7 +22,7 @@
   height: 175px;
   width: 350px;
   padding: 25px 83px;
-  background: $light-font;
+  background: var.$light-font;
 }
 
 .modal-delete__title{
